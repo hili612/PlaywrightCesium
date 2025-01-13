@@ -9,6 +9,10 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
+    "@types/cesium": "^1.67.14",
     "@types/node": "^22.10.5"
+  },
+  "dependencies": {
+    "cesium": "^1.125.0"
   }
 }

@@ -30,6 +30,9 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    /* Set navigation timeout to 60 seconds */
+    navigationTimeout: 60000,
   },
 
   /* Configure projects for major browsers */
@@ -76,4 +79,7 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
+  /* Set overall test timeout to 60 seconds */
+  timeout: 150000,
 });
